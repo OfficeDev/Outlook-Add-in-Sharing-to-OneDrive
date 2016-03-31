@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp
+          xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+          xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+          xsi:type="MailApp">
+  <Id>0e0a7d2a-0113-418f-b768-ca30d0bf63c2</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="OneDrive Sharing" />
+  <Description DefaultValue="An Outlook Add-in that enables checking links to OneDrive files for appropriate permissions"/>
+  <IconUrl DefaultValue="~remoteAppUrl/images/icon_64.png" />
+ 
+  <AppDomains>
+    <AppDomain>https://localhost:44300</AppDomain>
+    <AppDomain>https://login.microsoftonline.com</AppDomain>
+    <AppDomain>https://login.live.com</AppDomain>
+  </AppDomains>
+ 
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="~remoteAppUrl/index.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="And">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+    <Rule xsi:type="ItemHasKnownEntity" EntityType="Url"/>
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+
+  <!-- Add-in Commands : Go to https://aka.ms/OfficeBlogAddinCommands to learn more! -->
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox" />
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+
+        <DesktopFormFactor>
+          <!-- Location of the Functions that UI-less buttons can trigger (ExecuteFunction Actions) -->
+          <FunctionFile resid="functionFile" />
+
+          <!-- Message Compose -->
+          <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+            <!-- Use the default tab of the ExtensionPoint or create your own with <CustomTab id="myTab"> -->
+            <OfficeTab id="TabDefault">
+              <!-- Up to 6 Groups added per Tab -->
+              <Group id="msgEditGroup">
+                <Label resid="groupEditLabel" />
+                <!-- Launch the add-in : task pane button -->
+                <Control xsi:type="Button" id="msgEditOpenPaneButton">
+                  <Label resid="paneEditButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneEditSuperTipTitle" />
+                    <Description resid="paneEditSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="icon16" />
+                    <bt:Image size="32" resid="icon32" />
+                    <bt:Image size="80" resid="icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="messageEditTaskPaneUrl" />
+                  </Action>
+                </Control>                                
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <bt:Image id="icon16" DefaultValue="~remoteAppUrl/images/icon16.png"/>
+        <bt:Image id="icon32" DefaultValue="~remoteAppUrl/images/icon32.png"/>
+        <bt:Image id="icon80" DefaultValue="~remoteAppUrl/images/icon80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="messageEditTaskPaneUrl" DefaultValue="~remoteAppUrl/index.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupEditLabel" DefaultValue="OneDrive"/>
+        <bt:String id="paneEditButtonLabel" DefaultValue="Check access"/>
+        <bt:String id="paneEditSuperTipTitle" DefaultValue="Checks OneDrive links for access."/>        
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="paneEditSuperTipDescription" DefaultValue="Checks OneDrive links for access for your recipients."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

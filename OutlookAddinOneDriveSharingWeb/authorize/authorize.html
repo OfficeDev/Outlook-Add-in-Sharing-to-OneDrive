@@ -1,0 +1,31 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE in the project root for license information. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Authenticator</title>
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <link rel="stylesheet" href="authorize.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="authorize.controller.js" type="text/javascript"></script>
+</head>
+
+<body class="ms-bgColor-themeDarker">
+    <div id="success">
+        <h1 class="ms-fontColor-themeLight ms-font-su">Congrats</h1>
+        <p class="ms-fontColor-themeLighter ms-font-l">You're successfully authenticated.</p>
+        <p id="close" class="ms-fontColor-themeLighterAlt ms-font-m close-button">Click here to close</p>
+    </div>
+
+    <div id="failed">
+        <h1 class="ms-fontColor-themeLight ms-font-su">Oops</h1>
+        <p class="ms-fontColor-themeLighter ms-font-l">We've run into some issues with your sign in. Please try again later.</p>
+        <p class="ms-fontColor-themeLighterAlt ms-font-m close-button">Click here to close</p>
+    </div>
+</body>
+
+</html>

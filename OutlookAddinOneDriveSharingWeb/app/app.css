@@ -1,0 +1,55 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.ms-Grid {
+    padding: 15px;Fixing
+}
+
+#content-header {
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    line-height: 30px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#content-main {
+    background: #fff;
+    overflow: auto;
+}
+
+
+.ms-Persona {
+    margin-bottom: 15px;
+}
+
+
+    .ms-Persona .ms-font-m-plus {
+        margin-bottom: 5px;
+    }
+
+    .ms-Persona .ms-font-s {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+.grid-container {
+    margin-bottom: 25px;
+}
+
+#shareWith .ms-Persona {
+    margin-bottom: 15px;
+}
+
+#setPermissionsToAll {
+    margin-top: 10px;
+}

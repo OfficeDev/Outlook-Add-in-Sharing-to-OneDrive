@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Microsoft Outlook Add-in Sharing to OneDrive</title>
+
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css" />
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css" />
+    <link href="app/app.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <script src="app/authentication.config.js"></script>
+    <script src="app/render.controller.js"></script>
+    <script src="app/authentication.service.js" type="text/javascript"></script>
+    <script src="app/onedrive.share.service.js" type="text/javascript"></script>
+    <script src="app/app.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content-header" class="ms-bgColor-themePrimary">
+        <h1 class="ms-font-xxl ms-fontWeight-light ms-fontColor-white">Can I share?</h1>
+    </div>
+    <div id="content-main" class="ms-Grid">
+        <div class="ms-Grid-row">
+            <div id="shareWithSection" class="ms-Grid-col ms-u-sm12 grid-container">
+                <h2 class="ms-font-xl">Share with</h2>
+                <div id="shareWith">
+                    <p class="ms-font-l ms-fontColor-neutralSecondaryAlt ms-fontWeight-light"></p>
+                </div>
+                <div class="button-container">
+                    <button id="setPermissionsToAll" class="ms-Button ms-Button--primary"> <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span> <span class="ms-Button-label">Share</span> <span class="ms-Button-description">Description of the action this button takes</span> </button>
+                </div>
+            </div>
+            <div id="sharedWithSection" class="ms-Grid-col ms-u-sm12 grid-container">
+                <h2 class="ms-font-xl">Already shared with</h2>
+                <div id="sharedWith">
+                    <p class="ms-font-l ms-fontColor-neutralSecondaryAlt ms-fontWeight-light"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
