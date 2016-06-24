@@ -52,7 +52,7 @@ Once the Outlook desktop client has started, click **New Email** to compose a ne
 
 This add-in uses [add-in commands](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx), so you launch the add-in by choosing this command button on the ribbon:
 
-![Check access command button on teh ribbon](/readme-images/commandbutton.PNG)
+![Check access command button on the ribbon](/readme-images/commandbutton.PNG)
 
 A task pane appears with the list of recipients. The list is divided by who has permission to view the link, and who doesn't. 
 **Note** Any time you add or remove recipients, or change the link, click the command button again to refresh the list. 
