@@ -24,7 +24,7 @@ This sample requires the following:
 * [Microsoft Office Developer Tools for Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015).
 * [Microsoft Office Developer Tools Preview for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=49972). Note that both base and preview of Microsoft Office Developer Tools for Visual Studio 2015 must be installed.
 * Outlook 2016.
-* A computer running Exchange with at least one email account, or an Office 365 account. You can sign up for an [Office 365 Developer subscription](http://aka.ms/ro9c62) and get an Office 365 account through it.
+* A computer running Exchange with at least one email account, or an Office 365 account. If you don't have either, you can [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 * A personal OneDrive account. This is different from an Exchange account.
 * Internet Explorer 9 or later, which must be installed, but doesn't have to be the default browser. To support Office Add-ins, the Office client that acts as host uses browser components that are part of Internet Explorer 9 or later.
 
