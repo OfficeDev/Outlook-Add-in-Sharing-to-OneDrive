@@ -30,7 +30,7 @@ Nota: Actualmente, este ejemplo solo funciona con el servicio OneDrive de consum
 
 ## Configurar el proyecto
 
-1. Obtenga un token desde el sitio para desarrolladores de OneDrive. Para obtener un token, vaya a [OneDrive authentication and sign in](https://dev.onedrive.com/auth/msa_oauth.htm) (Inicio de sesión y autenticación de OneDrive) y haga clic en **Get Token** (Obtener token). Copie el token, que aparece después del texto _Authentication: bearer_ y guárdelo en un archivo de texto. Este token es válido durante una hora y le da acceso de lectura y escritura a los archivos de OneDrive del usuario que ha iniciado sesión. Deberá iniciar sesión en su OneDrive personal.
+1. Obtenga un token desde el sitio para desarrolladores de OneDrive. Para obtener un token, vaya a [Inicio de sesión y autenticación de OneDrive](https://dev.onedrive.com/auth/msa_oauth.htm) y haga clic en **Get Token** (Obtener token). Copie el token, que aparece después del texto _Authentication: bearer_ y guárdelo en un archivo de texto. Este token es válido durante una hora y le da acceso de lectura y escritura a los archivos de OneDrive del usuario que ha iniciado sesión. Deberá iniciar sesión en su OneDrive personal.
 2. Abra el archivo de la solución **OutlookAddinOneDriveSharing.sln** y, en el archivo `\app\authentication.config.js`, pegue el token, de esta forma:
 ```
 TOKEN = '<your_token>';

@@ -30,7 +30,7 @@
 
 ## 配置项目
 
-1. 从 OneDrive 开发人员网站获取令牌。若要获取令牌，请转到 [OneDrive authentication and sign in](https://dev.onedrive.com/auth/msa_oauth.htm)（OneDrive 身份验证和登录），然后单击“**Get Token**”（获取令牌）。复制 _Authentication: bearer_ 文本后面的令牌，并将其保存到文本文件中。此令牌的有效期为一小时，并为你提供对已登录用户的 OneDrive 文件的读取/写入访问权限。你将需要登录到你的个人 OneDrive。
+1. 从 OneDrive 开发人员网站获取令牌。若要获取令牌，请转到 [OneDrive authentication and sign in （OneDrive 身份验证和登录）](https://dev.onedrive.com/auth/msa_oauth.htm)，然后单击“**Get Token**”（获取令牌）。复制 _Authentication: bearer_ 文本后面的令牌，并将其保存到文本文件中。此令牌的有效期为一小时，并为你提供对已登录用户的 OneDrive 文件的读取/写入访问权限。你将需要登录到你的个人 OneDrive。
 2. 打开解决方案文件 **OutlookAddinOneDriveSharing.sln**，并在 `\app\authentication.config.js` 文件中粘贴此令牌，如下所示：
 ```
 TOKEN = '<your_token>';
