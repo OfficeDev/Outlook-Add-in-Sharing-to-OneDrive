@@ -18,8 +18,8 @@
 
 Для этого примера требуются следующие компоненты:
 
-* Visual Studio 2015. Если у вас нет Visual Studio 2015, вы можете бесплатно установить [Visual Studio Community 2015](http://aka.ms/vscommunity2015). 
-* [Инструменты разработчика Microsoft Office для Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015).
+* Visual Studio 2015. Если у вас нет Visual Studio 2015, вы можете бесплатно установить [Visual Studio Community 2015](http://aka.ms/vscommunity2015). 
+* [Инструменты разработчика Microsoft Office для Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015).
 * [Инструменты разработчика Microsoft Office для Visual Studio 2015 (предварительная версия)](http://www.microsoft.com/en-us/download/details.aspx?id=49972). Обратите внимание, что необходимо установить как базовую, так и предварительную версию Инструментов разработчика Microsoft Office для Visual Studio 2015.
 * Outlook 2016.
 * Компьютер с Exchange и по крайней мере одной учетной записью электронной почты или учетной записью Office 365. Если у вас нет какой-либо из этих учетных записей, вы можете [принять участие в программе для разработчиков Office 365 и получить бесплатную подписку на Office 365 сроком на 1 год](https://aka.ms/devprogramsignup).
@@ -50,7 +50,7 @@ TOKEN = '<your_token>';
 
 В этом примере используются [команды надстроек](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx), поэтому для запуска надстройки нажмите кнопку на ленте, указанную ниже.
 
-![Кнопка проверки доступа на ленте](../readme-images/commandbutton.PNG)
+![Кнопка проверки доступа на ленте](/readme-images/commandbutton.PNG)
 
 Отобразится область задач со списком получателей. Список разделен на две части. В одной из них указаны получатели с разрешением на просмотр ссылки, в другой — получатели без этого разрешения. **Примечание.** Каждый раз, когда вы добавляете или удаляете получателей либо редактируете ссылку, нажимайте эту кнопку заново, чтобы обновить список. 
 
@@ -87,3 +87,6 @@ TOKEN = '<your_token>';
 ## <a name="copyright"></a>Авторское право
 (c) Корпорация Майкрософт (Microsoft Corporation), 2016. Все права защищены.
 
+
+
+Этот проект соответствует [правилам поведения Майкрософт, касающимся обращения с открытым кодом](https://opensource.microsoft.com/codeofconduct/). Дополнительную информацию см. в разделе [часто задаваемых вопросов по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). Если у вас возникли вопросы или замечания, напишите нам по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).

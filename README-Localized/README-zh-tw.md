@@ -50,7 +50,7 @@ TOKEN = '<your_token>';
 
 這個增益集會使用 [增益功能命令](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx)，所以您可以藉由選擇功能區上的命令按鈕，啟動增益集︰
 
-![檢查功能區上的存取命令按鈕](../readme-images/commandbutton.PNG)
+![檢查功能區上的存取命令按鈕](/readme-images/commandbutton.PNG)
 
 工作窗格會顯示，並且具有收件者清單。清單會分為具有和不具有檢視連結權限的使用者。 **附註** 新增或移除收件者或變更連結時，再次按一下命令按鈕以重新整理清單。 
 
@@ -59,7 +59,7 @@ TOKEN = '<your_token>';
 ## <a name="understand-the-code"></a>瞭解程式碼
 
 * `app.js` - 在 app.js 中，會建立收件者的全域物件，方法是使用 `Office.context.mail.item.getAsync` 以從訊息中取得收件者。連結是以相同的方式，使用 `Office.context.mail.item.body.getAsync` 取得。
-* `onedrive.share.service.js` - 物件來處理 OneDrive API 的要求。此物件包含︰
+* `onedrive.share.service.js` - 來處理 OneDrive API 要求的物件。此物件包含︰
     - 維護連結的連結屬性。
     - 傳送要求至 OneDrive API 端點的要求方法，以及使用共用和權限 API。
     - 將顯示轉譯到工作窗格的 UI 物件。
@@ -87,3 +87,6 @@ TOKEN = '<your_token>';
 ## <a name="copyright"></a>著作權
 Copyright (c) 2016 Microsoft.著作權所有，並保留一切權利。
 
+
+
+此專案已採用 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/)。如需詳細資訊，請參閱[管理辦法常見問題集](https://opensource.microsoft.com/codeofconduct/faq/)，如果有其他問題或意見，請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。

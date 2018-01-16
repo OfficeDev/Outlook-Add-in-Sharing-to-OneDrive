@@ -50,7 +50,7 @@ Una vez que se ha iniciado el cliente para equipo de escritorio de Outlook, haga
 
 Este complemento usa [comandos de complemento](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx), por lo que inicia el complemento al elegir este botón de comando en la cinta de opciones:
 
-![Botón de comando Check access (Comprobar acceso) en la cinta de opciones](../readme-images/commandbutton.PNG)
+![Botón de comando Check access (Comprobar acceso) en la cinta de opciones](/readme-images/commandbutton.PNG)
 
 Aparece un panel de tareas con la lista de destinatarios. La lista se divide en quién tiene permiso para ver el vínculo y quién no. **Nota** Siempre que agregue o quite destinatarios o cambie el vínculo, vuelva a hacer clic en el botón de comando para actualizar la lista. 
 
@@ -87,3 +87,6 @@ Nos encantaría recibir sus comentarios sobre el ejemplo *Uso compartido del com
 ## <a name="copyright"></a>Copyright
 Copyright (c) 2016 Microsoft. Todos los derechos reservados.
 
+
+
+Este proyecto ha adoptado el [Código de conducta de código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para obtener más información, consulte las [preguntas más frecuentes sobre el Código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene otras preguntas o comentarios.

@@ -16,9 +16,9 @@
 
 ## <a name="prerequisites"></a>先决条件
 
-此示例需要以下各项：
+此示例要求如下：
 
-* Visual Studio 2015。如果你未安装 Visual Studio 2015，则可以免费安装 [Visual Studio Community 2015](http://aka.ms/vscommunity2015)。 
+* Visual Studio 2015。如果尚未安装 Visual Studio 2015，可以免费安装 [Visual Studio Community 2015](http://aka.ms/vscommunity2015)。 
 * [Microsoft Visual Studio 的 Office 开发人员工具 2015](http://aka.ms/officedevtoolsforvs2015)。
 * [Microsoft Visual Studio 的 Office 开发人员工具 2015 预览版](http://www.microsoft.com/en-us/download/details.aspx?id=49972)。请注意，必须同时安装 Microsoft Visual Studio 的 Office 开发人员工具 2015 基础版和预览版。
 * Outlook 2016。
@@ -44,13 +44,13 @@ TOKEN = '<your_token>';
 
 按 **F5** 即可运行项目。系统将提示你输入用于运行 Outlook 的电子邮件和密码。输入你的 _Exchange_ 电子邮件和密码。**注意** 这可能不同于你的个人 OneDrive 帐户电子邮件和密码。 
 
-在 Outlook 桌面客户端启动后，请单击“**新建电子邮件**”撰写一封新邮件。
+在 Outlook 桌面客户端启动后，立即单击“新建电子邮件”****，撰写一封新邮件。
 
 **重要说明** 如果系统未提示你接受 IIS Express 开发证书的安装，请导航到“**控制面板** | **添加/删除程序**”并选择“**IIS Express**”。右键单击并选择“**修复**”。重启 Visual Studio 并打开 OutlookAddinOneDriveSharing.sln 文件。
 
-此外接程序使用[外接程序命令](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx)，因此你可以通过在功能区上选择此命令按钮来启动该外接程序：
+因为此加载项使用[加载项命令](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx)，所以可以通过选择功能区上的这个命令按钮来启动加载项：
 
-![查看功能区上的访问命令按钮](../readme-images/commandbutton.PNG)
+![查看功能区上的访问命令按钮](/readme-images/commandbutton.PNG)
 
 任务窗格中显示收件人列表。该列表按拥有和没有查看链接权限的收件人进行划分。 **注意** 你可以随时添加或删除收件人，或者更改该链接，再次单击该命令按钮即可刷新该列表。 
 
@@ -59,7 +59,7 @@ TOKEN = '<your_token>';
 ## <a name="understand-the-code"></a>了解代码
 
 * `app.js` - 在 app.js 中，通过使用 `Office.context.mail.item.getAsync` 从邮件中获取收件人来创建收件人的全局对象。使用 `Office.context.mail.item.body.getAsync` 以相同的方式获取链接。
-* `onedrive.share.service.js` - 用于处理 OneDrive API 请求的对象。此对象包括：
+* `onedrive.share.service.js` - 用于处理发送到 OneDrive API 的请求的对象。此对象包括：
     - 维护链接的链接属性。
     - 发送请求到 OneDrive API 终结点以及使用共享和权限 API 的请求方法。
     - 呈现任务窗格中的显示内容的 UI 对象。
@@ -87,3 +87,6 @@ TOKEN = '<your_token>';
 ## <a name="copyright"></a>版权
 版权所有 (c) 2016 Microsoft。保留所有权利。
 
+
+
+此项目已采用 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。有关详细信息，请参阅[行为准则 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)。如有其他任何问题或意见，也可联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。

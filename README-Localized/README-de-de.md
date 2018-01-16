@@ -5,7 +5,7 @@ Benutzer können jetzt ein OneDrive-Element direkt von einem Outlook-Add-In aus 
 Mit der OneDrive `shares`-API können Sie programmgesteuert Berechtigungen für ein Element erhalten, indem Sie den Link des Elements verwenden. Anschließend können Sie die gleiche `shares`-API mit `action.invite` verwenden, um die URL für E-Mail-Empfänger freizugeben.
 
 
-## <a name="table-of-contents"></a>Inhaltsverzeichnis
+## <a name="table-of-contents"></a>Inhalt
 
 * [Voraussetzungen](#prerequisites)
 * [Konfigurieren des Projekts](#configure-the-project)
@@ -50,7 +50,7 @@ Sobald der Outlook-Desktopclient gestartet wurde, klicken Sie auf **Neue E-Mail-
 
 Dieses Add-In verwendet [Add-In-Befehle](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx); daher starten Sie das Add-In, indem Sie diese Befehlsschaltfläche im Menüband auswählen:
 
-![Befehlsschaltfläche zum Überprüfen des Zugriffs im Menüband](../readme-images/commandbutton.PNG)
+![Befehlsschaltfläche zum Überprüfen des Zugriffs im Menüband](/readme-images/commandbutton.PNG)
 
 Ein Aufgabenbereich mit der Liste der Empfänger wird angezeigt. In der Liste werden die Empfänger danach sortiert, ob Sie über Berechtigungen zum Anzeigen des Links verfügen. **Hinweis** Klicken Sie nach dem Hinzufügen oder Entfernen von Empfängern oder dem Ändern des Links erneut auf die Befehlsschaltfläche, um die Liste zu aktualisieren. 
 
@@ -59,7 +59,7 @@ Melden Sie sich zum Abrufen eines OneDrive-Links bei Ihrem OneDrive-Konto unter 
 ## <a name="understand-the-code"></a>Grundlegendes zum Code
 
 * `app.js` - In der Datei „app.js“ wird ein globales Objekt der Empfänger mithilfe von `Office.context.mail.item.getAsync` erstellt, um die Empfänger aus der Nachricht abzurufen. Links werden auf die gleiche Weise mit `Office.context.mail.item.body.getAsync` abgerufen.
-* `onedrive.share.service.js` Ein Objekt zum Verarbeiten von Anforderungen für die OneDrive-API.
+* `onedrive.share.service.js` Ein Objekt zum Verarbeiten von Anforderungen für die OneDrive-API. Dieses Objekt enthält:
     - Eine link-Eigenschaft zum Verwalten von Links.
     - Eine Anforderungsmethode zum Senden von Anforderungen an den OneDrive-API-Endpunkt und zum Verwenden der Freigaben- und Berechtigungs-API.
     - Ein UI-Objekt zum Anzeigen des Aufgabenbereichs.
@@ -87,3 +87,6 @@ Wir schätzen Ihr Feedback hinsichtlich des *Outlook-Add-In-Beispiels für die F
 ## <a name="copyright"></a>Copyright
 Copyright (c) 2016 Microsoft. Alle Rechte vorbehalten.
 
+
+
+In diesem Projekt wurden die [Microsoft Open Source-Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/faq/), oder richten Sie Ihre Fragen oder Kommentare an [opencode@microsoft.com](mailto:opencode@microsoft.com).

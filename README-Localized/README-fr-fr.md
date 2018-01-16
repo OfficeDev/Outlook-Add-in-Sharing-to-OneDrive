@@ -18,7 +18,7 @@ Avec l’API `shares` OneDrive, vous pouvez obtenir des autorisations par progra
 
 Cet exemple nécessite les éléments suivants :
 
-* Visual Studio 2015. Si vous n’avez pas Visual Studio 2015, vous pouvez installer [Visual Studio Community 2015](http://aka.ms/vscommunity2015) gratuitement. 
+* Visual Studio 2015. Si vous n’avez pas Visual Studio 2015, vous pouvez installer [Visual Studio Community 2015](http://aka.ms/vscommunity2015) gratuitement. 
 * [Outils de développement Microsoft Office pour Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015).
 * [Aperçu des outils de développement Microsoft Office pour Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=49972). La base et l’aperçu des outils de développement Microsoft Office pour Visual Studio 2015 doivent être tous les deux installés.
 * Outlook 2016.
@@ -50,7 +50,7 @@ Une fois que le client Outlook pour ordinateur de bureau a démarré, cliquez su
 
 Ce complément utilise des [commandes de complément](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx). De ce fait, vous lancez le complément en cliquant sur ce bouton de commande dans le ruban :
 
-![Bouton de commande de vérification d’accès sur le ruban](../readme-images/commandbutton.PNG)
+![Bouton de commande de vérification d’accès sur le ruban](/readme-images/commandbutton.PNG)
 
 Un volet Office s’affiche avec la liste des destinataires. La liste comporte deux groupes : les destinataires autorisés à visualiser le lien et ceux non autorisés à le faire. **Remarque** : lorsque vous ajoutez ou supprimez des destinataires, ou que vous modifiez le lien, cliquez à nouveau sur le bouton de commande pour actualiser la liste. 
 
@@ -59,7 +59,7 @@ Pour obtenir un lien OneDrive, connectez-vous à votre compte OneDrive sur www.o
 ## <a name="understand-the-code"></a>Comprendre le code
 
 * `app.js` - Dans app.js, un objet global de destinataires est créé à l’aide de l’élément `Office.context.mail.item.getAsync` pour obtenir les destinataires du message. Les liens sont obtenus de la même façon, avec `Office.context.mail.item.body.getAsync`.
-* `onedrive.share.service.js` - Objet pour gérer les demandes envoyées à l’API OneDrive. Cet objet inclut :
+* `onedrive.share.service.js` - Objet pour gérer les demandes envoyées à l’API OneDrive. Cet objet inclut :
     - Une propriété de lien pour tenir les liens à jour.
     - Une méthode de demande pour envoyer des demandes au point de terminaison d’API OneDrive, ainsi que pour utiliser l’API de partages et d’autorisations.
     - Un objet de l’interface utilisateur pour le rendu dans un volet Office.
@@ -87,3 +87,6 @@ Nous aimerions recevoir vos commentaires relatifs à l’exemple *Partage de com
 ## <a name="copyright"></a>Copyright
 Copyright (c) 2016 Microsoft. Tous droits réservés.
 
+
+
+Ce projet a adopté le [code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
