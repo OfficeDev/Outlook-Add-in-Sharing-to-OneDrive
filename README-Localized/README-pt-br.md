@@ -16,11 +16,11 @@ Com a API `shares` do OneDrive, você pode obter permissões programaticamente p
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Este exemplo requer o seguinte:
+Esse exemplo requer o seguinte:
 
 * Visual Studio 2015. Se não tiver o Visual Studio 2015, você poderá instalar o [Visual Studio Community 2015](http://aka.ms/vscommunity2015) gratuitamente. 
 * [Microsoft Office Developer Tools para Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015).
-* [Microsoft Office Developer Tools Preview para Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=49972). Observe que a base e a visualização do Microsoft Office Developer Tools for Visual Studio 2015 devem ser instaladas.
+* [Microsoft Office Developer Tools Preview para Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=49972). Observe que a base e a visualização do Microsoft Office Developer Tools para Visual Studio 2015 devem ser instaladas.
 * Outlook 2016.
 * Um computador executando o Exchange com pelo menos uma conta de email ou uma conta do Office 365. Caso não tenha nenhuma delas, [participe do Programa para Desenvolvedores do Office 365 e obtenha uma assinatura gratuita de 1 ano do Office 365](https://aka.ms/devprogramsignup).
 * Uma conta pessoal do OneDrive. É diferente de uma conta do Exchange.
@@ -50,7 +50,7 @@ Depois que o cliente do Outlook para área de trabalho iniciar, clique em **Novo
 
 Este suplemento usa [comandos de suplemento](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx) para que você inicie o suplemento escolhendo esse botão de comando na faixa de opções:
 
-![Botão de comando de verificação de acesso na faixa de opções](../readme-images/commandbutton.PNG)
+![Botão de comando de verificação de acesso na faixa de opções](/readme-images/commandbutton.PNG)
 
 Um painel de tarefas é exibida com a lista de destinatários. A lista é dividida por quem têm ou não permissão para exibir o link. **Observação** Sempre que você adicionar ou remover destinatários, ou alterar o link, clique no botão de comando novamente para atualizar a lista. 
 
@@ -59,7 +59,7 @@ Para obter um link do OneDrive, entre em sua conta do OneDrive no endereço www.
 ## <a name="understand-the-code"></a>Compreender o código
 
 * `app.js` - Em app.js, um objeto global de destinatários é criado usando o `Office.context.mail.item.getAsync` para obter os destinatários da mensagem. Os links são obtidos da mesma maneira com `Office.context.mail.item.body.getAsync`.
-* `onedrive.share.service.js` - Um objeto para lidar com solicitações à API do OneDrive. Este objeto inclui:
+* `onedrive.share.service.js` – um objeto para lidar com solicitações à API do OneDrive. Este objeto inclui:
     - Uma propriedade de link para manter links.
     - Um método de solicitação para enviar solicitações para o ponto de extremidade da API do OneDrive e usar a API de compartilhamentos e permissões.
     - Um objeto da interface do usuário para renderizar a exibição para o painel de tarefas.
@@ -84,6 +84,9 @@ Adoraríamos receber seus comentários sobre o exemplo do *Compartilhamento do S
 * [Central de desenvolvimento do OneDrive](http://dev.onedrive.com)
 * [Central de desenvolvimento do Outlook](http://dev.outlook.com)
 
-## <a name="copyright"></a>Direitos autorais
+## <a name="copyright"></a>Copyright
 Copyright © 2016 Microsoft. Todos os direitos reservados.
 
+
+
+Este projeto adotou o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct/). Para saber mais, confira as [Perguntas frequentes sobre o Código de Conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou contate [opencode@microsoft.com](mailto:opencode@microsoft.com) se tiver outras dúvidas ou comentários.

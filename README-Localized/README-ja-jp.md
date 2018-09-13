@@ -16,7 +16,7 @@ OneDrive `shares` API では、アイテムのリンクを使用してアイテ�
 
 ## <a name="prerequisites"></a>前提条件
 
-このサンプルを実行するには次のものが必要です:
+このサンプルを実行するには次のものが必要です。
 
 * Visual Studio 2015。Visual Studio 2015 をお持ちでない場合は、無料版の [Visual Studio Community 2015](http://aka.ms/vscommunity2015) をインストールできます。 
 * [Microsoft Office Developer Tools for Visual Studio 2015](http://aka.ms/officedevtoolsforvs2015)。
@@ -50,7 +50,7 @@ Outlook デスクトップ クライアントが起動したら、**[電子メ�
 
 このアドインでは[アドイン コマンド](https://msdn.microsoft.com/EN-US/library/office/mt267547.aspx)を使用します。リボンにあるこのコマンド ボタンを選択して、アドインを起動します。
 
-![アクセスを確認するリボン上のコマンド ボタン](../readme-images/commandbutton.PNG)
+![アクセスを確認するリボン上のコマンド ボタン](/readme-images/commandbutton.PNG)
 
 受信者の一覧と共に作業ウィンドウが表示されます。この一覧は、リンクを表示するアクセス許可を持つユーザーと持たないユーザーで分けられています。 **注** 受信者の追加または削除を行ったり、リンクを変更したりした場合は、必ずコマンド ボタンをもう一度クリックしてリストを更新してください。 
 
@@ -85,5 +85,8 @@ OneDrive リンクを取得するには、www.onedrive.com で OneDrive アカ�
 * [Outlook デベロッパー センター](http://dev.outlook.com)
 
 ## <a name="copyright"></a>著作権
-Copyright (c) 2016 Microsoft. All rights reserved.
+Copyright (c) 2016 Microsoft.All rights reserved.
 
+
+
+このプロジェクトでは、[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) が採用されています。詳細については、「[Code of Conduct の FAQ](https://opensource.microsoft.com/codeofconduct/faq/)」を参照してください。また、その他の質問やコメントがあれば、[opencode@microsoft.com](mailto:opencode@microsoft.com) までお問い合わせください。
