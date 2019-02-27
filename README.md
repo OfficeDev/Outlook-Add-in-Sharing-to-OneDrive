@@ -1,3 +1,17 @@
+---
+topic: sample
+products:
+- Outlook
+- OneDrive
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # Microsoft Outlook Add-in Sharing to OneDrive
 
 Users can now share a OneDrive item directly from within an Outlook add-in.
