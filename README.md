@@ -1,11 +1,11 @@
 ---
 topic: sample
 products:
-- Outlook
-- OneDrive
-- Office 365
+- office-outlook
+- office-onedrive
+- office-365
 languages:
-- JavaScript
+- javascript
 extensions:
   contentType: samples
   technologies:
