@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Compartilhamento do Suplemento do Microsoft Outlook no OneDrive
 
 Os usuários já podem compartilhar itens do OneDrive diretamente de um suplemento do Outlook. Neste exemplo, mostraremos como usar a API JavaScript para Office e a API do OneDrive para criar um suplemento do Microsoft Outlook que exibe os destinatários de email que têm permissão para exibir links do OneDrive no corpo da mensagem. Se houver destinatários que não tenham a permissão adequada para exibir os links, o usuário terá a opção de conceder permissões para destinatários selecionados.

@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Microsoft Outlook 外接程序的 OneDrive 共享
 
 现在，用户可以直接从 Outlook 外接程序内共享 OneDrive 项。本示例介绍如何使用适用于 Office 的 JavaScript API，以及如何使用 OneDrive API 创建 Microsoft Outlook 外接程序，用于显示哪些电子邮件收件人拥有查看邮件正文中 OneDrive 链接的权限。如果收件人不具有查看链接的正确权限，用户可以选择将权限授予所选收件人。

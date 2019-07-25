@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Надстройка Microsoft Outlook для предоставления общего доступа к файлам в OneDrive
 
 Теперь пользователи могут делиться файлами, хранящимися в OneDrive, непосредственно из надстройки Outlook. В этом примере показано, как использовать API JavaScript для Office и API OneDrive для создания надстройки Microsoft Outlook, которая показывает, у каких получателей электронной почты есть разрешение на просмотр ссылки на OneDrive в тексте сообщения. Если у некоторых получателей такого разрешения нет, пользователь может предоставить его выбранным получателям.

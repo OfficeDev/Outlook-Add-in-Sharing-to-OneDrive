@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Partage de complément Microsoft Outlook dans OneDrive
 
 Les utilisateurs peuvent désormais partager un élément OneDrive directement depuis un complément Outlook. Dans cet exemple, nous allons vous montrer comment utiliser l’interface API JavaScript pour Office et l’API OneDrive afin de créer un complément Microsoft Outlook permettant d’indiquer les destinataires du message qui sont autorisés à visualiser le lien OneDrive dans le corps du message. S’il existe des destinataires ne disposant pas de l’autorisation appropriée pour visualiser les liens, l’utilisateur aura la possibilité d’octroyer des autorisations aux destinataires sélectionnés.

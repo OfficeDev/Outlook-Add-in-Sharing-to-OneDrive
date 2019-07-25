@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Microsoft Outlook 增益集共用至 OneDrive
 
 使用者現在可以直接從 Outlook 增益集內共用 OneDrive 項目。在這個範例中，為您示範如何使用 JavaScript API for Office 和 OneDrive API 以建立 Microsoft Outlook 增益集，顯示哪一個電子郵件收件者有檢視郵件本文中 OneDrive 連結的權限。如果有收件者沒有適當的權限可以檢視連結，則使用者可以選擇授與權限給選取的收件者。

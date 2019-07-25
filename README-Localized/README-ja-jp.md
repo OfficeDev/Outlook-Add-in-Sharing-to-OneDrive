@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>OneDrive に対する Microsoft Outlook アドインの共有
 
 ユーザーは OneDrive アイテムを Outlook アドイン内から直接共有できるようになりました。このサンプルに、JavaScript API for Office と OneDrive API を使用して、どの電子メール受信者がメッセージ本文の OneDrive リンクを表示するアクセス許可を持つかを表示する Microsoft Outlook アドインを作成する方法を示します。リンクを表示する適切なアクセス許可を持たない受信者が存在する場合、ユーザーには選択した受信者にアクセス許可を付与するオプションがあります。
