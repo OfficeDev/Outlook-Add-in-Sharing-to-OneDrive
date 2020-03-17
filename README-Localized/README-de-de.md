@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- office-outlook
+- office-onedrive
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 3/24/2016 9:32:55 AM
+---
 # <a name="microsoft-outlook-add-in-sharing-to-onedrive"></a>Microsoft Outlook-Add-In für die Freigabe in OneDrive
 
 Benutzer können jetzt ein OneDrive-Element direkt von einem Outlook-Add-In aus freigeben. In diesem Beispiel zeigen wir Ihnen, wie die JavaScript-API für Office und die OneDrive-API verwendet werden, um ein Microsoft Outlook-Add-In zu erstellen, das angezeigt, welche E-Mail-Empfänger über die Berechtigung zum Anzeigen des OneDrive-Links im Nachrichtentext verfügen. Wenn Empfänger nicht über die erforderliche Berechtigung zum Anzeigen der Links verfügen, hat der Benutzer die Möglichkeit, ausgewählten Empfängern Berechtigungen zu gewähren.
